@@ -10,6 +10,8 @@ interface profileData{
     profile_pic: string
 }
 
+
+
 const profileInfo : profileData = {name: data.name, profile_pic: data.profile_pic }
 
 
