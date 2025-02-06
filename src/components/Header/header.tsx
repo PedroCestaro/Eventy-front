@@ -22,7 +22,7 @@ export default function Header() {
     }
 
     return (
-        <header>
+ 
             <nav id="main-bar">
                 <div id="logo">
                     <div style={{ width: "200px", height: "50px", backgroundColor: "grey" }}></div>
@@ -51,6 +51,5 @@ export default function Header() {
                 <UserInfo />
 
             </nav>
-        </header>
     );
 }

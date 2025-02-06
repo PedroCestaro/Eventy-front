@@ -1,0 +1,11 @@
+#carousel-categories{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    overflow: hidden;
+}
+
+#swiper-category{
+    display: flex;   
+    width: min-content;
+}
