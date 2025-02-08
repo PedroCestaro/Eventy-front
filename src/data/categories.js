@@ -34,7 +34,7 @@ export default {
             "name" : "Cursos"
         },
         {
-            "id" : 0,
+            "id" : 8,
             "name" : "Gastronomia"
         },
         {

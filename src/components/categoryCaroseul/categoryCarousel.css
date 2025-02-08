@@ -8,4 +8,15 @@
 #swiper-category{
     display: flex;   
     width: min-content;
+    transition: 0.5ms ease;
+}
+
+#carousel-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+#carousel-buttons button{
+    background: none;
+    cursor: pointer;
+    border: none;
 }
