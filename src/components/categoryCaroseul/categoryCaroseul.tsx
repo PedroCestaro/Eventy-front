@@ -11,7 +11,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 export default function CategoryCarousel(){
    
     const swiper = useRef<HTMLDivElement>(null)
-    const arrowRigh = useRef<HTMLButtonElement>(null);
+    const arrowRight = useRef<HTMLButtonElement>(null);
     const arrowLeft = useRef<HTMLButtonElement>(null)
 
     const[swipe, setSwipe] = useState(0);
@@ -33,11 +33,11 @@ export default function CategoryCarousel(){
             swiper.current.style.transform = `translateX(${swipe}px)`;
         }
 
-        if(arrowLeft.current != null){
+        if(arrowRight.current != null){
             if(swipe == 0)
-                arrowLeft.current.disabled = true;
+                arrowRight.current.disabled = true;
             else 
-                arrowLeft.current.disabled = false;
+                arrowRight.current.disabled = false;
         }
 
     }, [swipe]);
@@ -47,7 +47,7 @@ export default function CategoryCarousel(){
         <div id="carousel-categories">
                 <div id="carousel-buttons">
                     <button onClick={e => handleSwipeLeft()}  ref={arrowLeft} > <FontAwesomeIcon icon={faChevronLeft}/> </button>
-                    <button onClick={e => handleSwipeRigth()} > <FontAwesomeIcon icon={faChevronRight}/> </button>
+                    <button onClick={e => handleSwipeRigth()} ref={arrowRight}> <FontAwesomeIcon icon={faChevronRight}/> </button>
                 </div>
             <div id="swiper-category" ref={swiper}>
                 {
